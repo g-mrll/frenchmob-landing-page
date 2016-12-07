@@ -20,9 +20,29 @@
   <meta name="twitter:description" content="frenchmob - la slack team pour les frenchies qui geek dans le mobile">
   <meta name="twitter:image" content="http://www.frenchmob.fr/iTunesArtwork.png">
   <meta name="twitter:domain" content="http://www.frenchmob.fr">
+  <style>
+    @media screen and (min-width: 768px) {
+      img{
+        max-width: 88%;
+        height: auto;
+      }
+      div#cta{
+        padding:88px;
+      }
+    }
+    @media screen and (max-width: 768px) {
+      img{
+        max-width: 100%;
+        height: auto;
+      }
+      div#cta{
+        padding:8px;
+      }
+    }
+  </style>
 </head>
 <body>
-  <div id="cta" style="padding:88px; text-align: center; cursor: pointer;"><img style="max-width: 88%; height: auto;" src="./landingPage.png" /></div>
+  <div id="cta" style="text-align: center; cursor: pointer;"><img src="./landingPage.png" /></div>
   <!-- et ouais, uniquement un png pour m'éviter d'être spammé ;-) -->
   <!-- et un peu de GA histoire de regarder qq graphes à la pause café -->
   <script>
@@ -34,9 +54,9 @@
   ga('send', 'pageview');
   </script>
   <script type="text/javascript">
-    function d(s){var o = '';for(var i=0;i<s.length;++i){o += String.fromCharCode(s[i] - 42);}return o;}
-    const _cta = document.getElementById('cta');
-    _cta.addEventListener('click', function(){window.open(d([151,139,147,150,158,153,100,145,159,147,150,150,139,159,151,143,106,144,156,143,152,141,146,151,153,140,88,144,156]),d([137,154,139,156,143,152,158]))}, false);
+  function d(s){var o='';for(var i=0;i<s.length;++i){o += String.fromCharCode(s[i]-42);}return o;}
+  const _cta=document.getElementById('cta');
+  _cta.addEventListener('click',function(){window.open(d([151,139,147,150,158,153,100,145,159,147,150,150,139,159,151,143,106,144,156,143,152,141,146,151,153,140,88,144,156]),d([137,154,139,156,143,152,158]))},false);
   </script>
 </body>
 </html>
